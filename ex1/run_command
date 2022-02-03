@@ -1,0 +1,7 @@
+#!/bin/bash
+flex -l main.l
+bison -dv main.y
+gcc main.tab.c lex.yy.c calculations.c -lfl -o run -lm
+rm main.output main.tab.c main.tab.h lex.yy.c
+./run
+rm run

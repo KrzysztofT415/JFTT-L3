@@ -1,0 +1,3 @@
+#!/bin/bash
+python3 ex2.py
+rm -rf parsetab.py parser.out __pycache__
